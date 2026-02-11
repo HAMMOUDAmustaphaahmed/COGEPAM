@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chambre froide négative COGEPAM - Congélation et stockage à -18°C à -25°C. Pour viandes, poissons et produits surgelés. Devis gratuit.">
+    <title>Chambre Froide Négative | Congélation -18°C à -25°C - COGEPAM</title>
+    <link rel="canonical" href="https://www.cogepam.tn/pages/chambres-froides/negative.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="chambres-froides.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <img src="../../images/logo-cogepam.webp" alt="COGEPAM Logo" width="40" height="40">
+                <span class="nav-logo-text">COGEPAM</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <button class="menu-close" id="menuClose" aria-label="Fermer le menu">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <a href="../../index.html" class="nav-link">Accueil</a>
+
+                <div class="nav-dropdown mega-dropdown active">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="true">
+                        Produits <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu mega-menu">
+                        <div class="mega-menu-grid">
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-snowflake"></i> Chambres Froides</h4>
+                                <a href="positive.html" class="mega-menu-item">
+                                    <span class="item-title">Chambre Positive</span>
+                                    <span class="item-desc">Conservation 0°C à +10°C</span>
+                                </a>
+                                <a href="negative.html" class="mega-menu-item featured active">
+                                    <span class="item-title">Chambre Négative</span>
+                                    <span class="item-desc">Congélation -18°C à -25°C</span>
+                                </a>
+                                <a href="modulaire.html" class="mega-menu-item">
+                                    <span class="item-title">Chambre Modulaire</span>
+                                    <span class="item-desc">Solutions démontables</span>
+                                </a>
+                            </div>
+
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-wind"></i> Climatisation Adiabatique</h4>
+                                <a href="../climatisation-adiabatique/index.html" class="mega-menu-item">
+                                    <span class="item-title">La Nature vous Rafraîchit</span>
+                                    <span class="item-desc">Technologie écologique</span>
+                                </a>
+                            </div>
+
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-th-large"></i> Panneaux & Portes</h4>
+                                <a href="../panneaux-sandwich/index.html" class="mega-menu-item">
+                                    <span class="item-title">Panneaux Sandwich</span>
+                                    <span class="item-desc">Isolation thermique</span>
+                                </a>
+                                <a href="../portes-frigorifiques/index.html" class="mega-menu-item">
+                                    <span class="item-title">Portes Frigorifiques</span>
+                                    <span class="item-desc">Coulissantes, battantes</span>
+                                </a>
+                            </div>
+
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-cogs"></i> Équipements</h4>
+                                <a href="../refrigeration-industrielle/index.html" class="mega-menu-item">
+                                    <span class="item-title">Réfrigération Industrielle</span>
+                                    <span class="item-desc">Compresseurs, condenseurs</span>
+                                </a>
+                                <a href="../equipements/index.html" class="mega-menu-item">
+                                    <span class="item-title">Accessoires</span>
+                                    <span class="item-desc">PVC, éclairage, régulation</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="../a-propos/index.html" class="nav-link">À Propos</a>
+
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Nos Interventions <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="../interventions/maintenance-preventive.html" class="nav-dropdown-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <span class="item-main">Maintenance Préventive</span>
+                                <span class="item-sub">Contrôles programmés</span>
+                            </div>
+                        </a>
+                        <a href="../interventions/maintenance-curative.html" class="nav-dropdown-item">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <span class="item-main">Maintenance Curative</span>
+                                <span class="item-sub">Intervention 24/7</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../faq/index.html" class="nav-link">FAQ</a>
+                <a href="../contact/index.html" class="nav-link nav-cta">Contact</a>
+
+                <div class="nav-dropdown lang-dropdown">
+                    <button class="nav-dropdown-toggle lang-toggle" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="nav-flag">
+                        <span>FR</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu lang-menu">
+                        <button class="nav-dropdown-item lang-option active" data-lang="fr">
+                            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="lang-flag">
+                            <span>Français</span>
+                        </button>
+                        <button class="nav-dropdown-item lang-option" data-lang="en">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="lang-flag">
+                            <span>English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../../index.html">Accueil</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="index.html">Chambres Froides</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Chambre Négative</span>
+        </div>
+    </div>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../../images/chambre-negative-main.webp" alt="Chambre Froide Négative COGEPAM" id="mainImage">
+                    </div>
+                    <div class="thumbnail-list">
+                        <img src="../../images/chambre-negative-1.webp" alt="Vue 1" class="thumb active" onclick="changeImage(this)">
+                        <img src="../../images/chambre-negative-2.webp" alt="Vue 2" class="thumb" onclick="changeImage(this)">
+                        <img src="../../images/chambre-negative-3.webp" alt="Vue 3" class="thumb" onclick="changeImage(this)">
+                        <img src="../../images/chambre-negative-4.webp" alt="Vue 4" class="thumb" onclick="changeImage(this)">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <span class="product-category">Chambres Froides</span>
+                    <h1>Chambre Froide Négative</h1>
+                    <p class="product-subtitle">Congélation et stockage à -18°C à -25°C</p>
+                    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <div>
+                                <span class="spec-label">Température</span>
+                                <span class="spec-value">-18°C à -25°C</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <div>
+                                <span class="spec-label">Dimensions</span>
+                                <span class="spec-value">Sur mesure</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-plug"></i>
+                            <div>
+                                <span class="spec-label">Alimentation</span>
+                                <span class="spec-value">380V Triphasé</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Notre chambre froide négative assure une congélation rapide et un stockage optimal à très basse température. Équipement professionnel pour l'industrie agroalimentaire.</p>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="../contact/index.html" class="btn-primary large">
+                            <i class="fas fa-file-invoice"></i> Demander un Devis
+                        </a>
+                        <a href="tel:+21629077342" class="btn-secondary">
+                            <i class="fas fa-phone"></i> Appeler
+                        </a>
+                    </div>
+                    
+                    <div class="product-certifications">
+                        <span><i class="fas fa-check-circle"></i> Conforme HACCP</span>
+                        <span><i class="fas fa-check-circle"></i> Garantie 2 ans</span>
+                        <span><i class="fas fa-check-circle"></i> Installation incluse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-details">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'description')">Description</button>
+                <button class="tab-btn" onclick="openTab(event, 'specifications')">Spécifications Techniques</button>
+                <button class="tab-btn" onclick="openTab(event, 'applications')">Applications</button>
+            </div>
+            
+            <div id="description" class="tab-content active">
+                <h2>Chambre Froide Négative - Description Détaillée</h2>
+                <p>La chambre froide négative COGEPAM est spécialement conçue pour la congélation et le stockage de produits à très basse température. Elle garantit une chaîne du froid irréprochable pour les produits sensibles.</p>
+                
+                <h3>Caractéristiques principales</h3>
+                <ul>
+                    <li><strong>Isolation renforcée :</strong> Panneaux sandwich 120 à 200mm avec mousse PU haute densité</li>
+                    <li><strong>Étanchéité maximale :</strong> Joints spéciaux et portes avec chauffage de seuil anti-givre</li>
+                    <li><strong>Régulation précise :</strong> Thermostat électronique avec alarme de dérive température</li>
+                    <li><strong>Système de dégivrage :</strong> Automatique par résistances électriques ou gaz chaud</li>
+                    <li><strong>Éclairage :</strong> LED étanche résistant au froid (-40°C)</li>
+                </ul>
+                
+                <h3>Avantages</h3>
+                <ul>
+                    <li>Congélation rapide préservant la qualité des aliments</li>
+                    <li>Stockage longue durée sans dégradation</li>
+                    <li>Économie d'énergie optimisée malgré les basses températures</li>
+                    <li>Conformité aux normes d'hygiène les plus strictes</li>
+                </ul>
+            </div>
+            
+            <div id="specifications" class="tab-content">
+                <h2>Spécifications Techniques</h2>
+                <table class="specs-table">
+                    <tr>
+                        <th>Caractéristique</th>
+                        <th>Valeur</th>
+                    </tr>
+                    <tr>
+                        <td>Plage de température</td>
+                        <td>-18°C à -25°C (réglable)</td>
+                    </tr>
+                    <tr>
+                        <td>Précision de régulation</td>
+                        <td>±1°C</td>
+                    </tr>
+                    <tr>
+                        <td>Épaisseur panneaux</td>
+                        <td>120mm, 150mm, 180mm ou 200mm</td>
+                    </tr>
+                    <tr>
+                        <td>Densité mousse PU</td>
+                        <td>40-42 kg/m³</td>
+                    </tr>
+                    <tr>
+                        <td>Coeff. transmission thermique</td>
+                        <td>0.18 W/m²K</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentation électrique</td>
+                        <td>380V triphasé</td>
+                    </tr>
+                    <tr>
+                        <td>Fréquence</td>
+                        <td>50 Hz</td>
+                    </tr>
+                    <tr>
+                        <td>Refrigerant</td>
+                        <td>R404A, R448A, R449A ou CO2</td>
+                    </tr>
+                    <tr>
+                        <td>Dégivrage</td>
+                        <td>Électrique ou gaz chaud</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div id="applications" class="tab-content">
+                <h2>Applications Recommandées</h2>
+                <div class="applications-list">
+                    <div class="app-item">
+                        <i class="fas fa-drumstick-bite"></i>
+                        <h4>Viandes Congelées</h4>
+                        <p>Stockage longue durée de viandes bovines, ovines et avicoles</p>
+                    </div>
+                    <div class="app-item">
+                        <i class="fas fa-fish"></i>
+                        <h4>Produits de la Mer</h4>
+                        <p>Congélation et conservation de poissons, crustacés et fruits de mer</p>
+                    </div>
+                    <div class="app-item">
+                        <i class="fas fa-ice-cream"></i>
+                        <h4>Glaces et Sorbets</h4>
+                        <p>Stockage optimal des produits surgelés sucrés</p>
+                    </div>
+                    <div class="app-item">
+                        <i class="fas fa-boxes"></i>
+                        <h4>Produits Surgelés</h4>
+                        <p>Légumes, plats préparés et produits industriels surgelés</p>
+                    </div>
+                    <div class="app-item">
+                        <i class="fas fa-flask"></i>
+                        <h4>Produits Pharmaceutiques</h4>
+                        <p>Stockage de vaccins et médicaments thermosensibles</p>
+                    </div>
+                    <div class="app-item">
+                        <i class="fas fa-vial"></i>
+                        <h4>Échantillons Biologiques</h4>
+                        <p>Conservation d'échantillons de laboratoire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Produits Similaires</h2>
+            <div class="related-grid">
+                <a href="positive.html" class="related-card">
+                    <img src="../../images/chambre-positive-thumb.webp" alt="Chambre Positive">
+                    <h3>Chambre Positive</h3>
+                    <p>0°C à +10°C</p>
+                </a>
+                <a href="modulaire.html" class="related-card">
+                    <img src="../../images/chambre-modulaire-thumb.webp" alt="Chambre Modulaire">
+                    <h3>Chambre Modulaire</h3>
+                    <p>Solution flexible</p>
+                </a>
+                <a href="../portes-frigorifiques/index.html" class="related-card">
+                    <img src="../../images/portes-thumb.webp" alt="Portes Frigorifiques">
+                    <h3>Portes Frigorifiques</h3>
+                    <p>Accessoires</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../../images/logo-cogepam.webp" alt="COGEPAM" width="50" height="50">
+                        <span>COGEPAM</span>
+                    </div>
+                    <p>Expert en solutions de réfrigération industrielle et commerciale.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="index.html">Chambres Froides</a></li>
+                        <li><a href="../climatisation-adiabatique/index.html">Climatisation Adiabatique</a></li>
+                        <li><a href="../panneaux-sandwich/index.html">Panneaux Sandwich</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +216 29 07 73 42</li>
+                        <li><i class="fas fa-envelope"></i> cogepam@gbm.tn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 COGEPAM. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script>
+        function changeImage(thumb) {
+            document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+            document.getElementById('mainImage').src = thumb.src;
+        }
+        
+        function openTab(evt, tabName) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQ COGEPAM - Réponses à vos questions sur les chambres froides, la climatisation adiabatique et nos services de maintenance.">
+    <title>FAQ | Questions Fréquentes - COGEPAM</title>
+    <link rel="canonical" href="https://www.cogepam.tn/pages/faq/">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <!-- Structure avec active sur FAQ -->
+    </nav>
+    
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../../index.html">Accueil</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>FAQ</span>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="faq-hero">
+        <div class="container">
+            <h1>Questions Fréquentes</h1>
+            <p>Trouvez les réponses à vos questions sur nos produits et services</p>
+            
+            <div class="faq-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="faqSearch" placeholder="Rechercher une question...">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-categories">
+                <button class="cat-btn active" data-cat="all">Toutes</button>
+                <button class="cat-btn" data-cat="chambres">Chambres Froides</button>
+                <button class="cat-btn" data-cat="adiabatique">Adiabatique</button>
+                <button class="cat-btn" data-cat="maintenance">Maintenance</button>
+                <button class="cat-btn" data-cat="devis">Devis & Commande</button>
+            </div>
+
+            <div class="faq-list">
+                <!-- Chambres Froides -->
+                <div class="faq-item" data-category="chambres">
+                    <button class="faq-question">
+                        <span>Quelle est la différence entre une chambre positive et négative ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Une <strong>chambre positive</strong> maintient une température entre 0°C et +10°C, idéale pour la conservation des produits frais (fruits, légumes, laitiers, viandes fraîches).</p>
+                        <p>Une <strong>chambre négative</strong> maintient une température entre -18°C et -25°C, destinée à la congélation et au stockage longue durée (viandes congelées, produits surgelés, glaces).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="chambres">
+                    <button class="faq-question">
+                        <span>Quelle épaisseur de panneaux choisir pour ma chambre froide ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>L'épaisseur dépend de la température souhaitée :</p>
+                        <ul>
+                            <li><strong>80-100mm</strong> : Chambres positives (0°C à +10°C)</li>
+                            <li><strong>120-150mm</strong> : Chambres négatives (-18°C à -25°C)</li>
+                            <li><strong>180-200mm</strong> : Chambres très froides ou environnements difficiles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Adiabatique -->
+                <div class="faq-item" data-category="adiabatique">
+                    <button class="faq-question">
+                        <span>La climatisation adiabatique fonctionne-t-elle en toutes saisons ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La climatisation adiabatique est <strong>plus efficace par temps chaud et sec</strong>. En Tunisie, elle fonctionne optimalement de mai à octobre. En période humide (hiver), son efficacité est réduite mais elle apporte toujours une ventilation rafraîchissante.</p>
+                        <p>Le principe repose sur l'évaporation de l'eau : plus l'air est sec, plus l'évaporation est importante et le refroidissement efficace.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="adiabatique">
+                    <button class="faq-question">
+                        <span>Quelle consommation d'eau pour une climatisation adiabatique ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La consommation d'eau dépend de la taille de l'installation et de l'humidité ambiante. En moyenne :</p>
+                        <ul>
+                            <li><strong>Petite installation</strong> (bureau, restaurant) : 10-20 litres/jour</li>
+                            <li><strong>Moyenne installation</strong> (magasin, atelier) : 50-100 litres/jour</li>
+                            <li><strong>Grande installation</strong> (usine, entrepôt) : 200-500 litres/jour</li>
+                        </ul>
+                        <p>Cette consommation reste négligeable comparée aux économies d'énergie réalisées (jusqu'à 90% par rapport à la climatisation traditionnelle).</p>
+                    </div>
+                </div>
+
+                <!-- Maintenance -->
+                <div class="faq-item" data-category="maintenance">
+                    <button class="faq-question">
+                        <span>À quelle fréquence faut-il entretenir une chambre froide ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous recommandons :</p>
+                        <ul>
+                            <li><strong>Contrôle visuel mensuel</strong> : vérification des températures, propreté</li>
+                            <li><strong>Entretien trimestriel</strong> : nettoyage des condenseurs, graissage</li>
+                            <li><strong>Révision annuelle</strong> : contrôle complet, étanchéité, remplacement des consommables</li>
+                        </ul>
+                        <p>Un contrat de maintenance préventive assure la longévité de votre installation et évite les pannes coûteuses.</p>
+                    </div>
+                </div>
+
+                <!-- Devis -->
+                <div class="faq-item" data-category="devis">
+                    <button class="faq-question">
+                        <span>Comment obtenir un devis pour une chambre froide ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Vous pouvez demander un devis gratuitement :</p>
+                        <ul>
+                            <li>Par téléphone : <a href="tel:+21629077342">+216 29 07 73 42</a></li>
+                            <li>Par email : <a href="mailto:cogepam@gbm.tn">cogepam@gbm.tn</a></li>
+                            <li>Via notre <a href="../contact/index.html">formulaire en ligne</a></li>
+                        </ul>
+                        <p>Pour un devis précis, nous avons besoin de connaître : dimensions souhaitées, température de fonctionnement, type de produits stockés, et localisation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-contact">
+                <h3>Vous ne trouvez pas votre réponse ?</h3>
+                <p>Contactez-nous directement, nous vous répondrons dans les plus brefs délais.</p>
+                <a href="../contact/index.html" class="btn-primary">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer standard -->
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                // Open clicked if wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Category Filter
+        document.querySelectorAll('.cat-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const cat = btn.dataset.cat;
+                
+                document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (cat === 'all' || item.dataset.category === cat) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search
+        document.getElementById('faqSearch').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            
+            document.querySelectorAll('.faq-item').forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(term) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

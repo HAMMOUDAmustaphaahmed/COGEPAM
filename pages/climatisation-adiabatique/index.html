@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Climatisation adiabatique COGEPAM - Jusqu'à 90% d'économie d'énergie. La nature vous rafraîchit avec une technologie écologique utilisant l'eau comme réfrigérant.">
+    <meta name="keywords" content="climatisation adiabatique, rafraîchissement évaporatif, froid écologique, économie énergie, Tunisie">
+    <title>Climatisation Adiabatique | La Nature vous Rafraîchit - COGEPAM</title>
+    <link rel="canonical" href="https://www.cogepam.tn/pages/climatisation-adiabatique/">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="adiabatique.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (même structure avec chemins relatifs ../../) -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <img src="../../images/logo-cogepam.webp" alt="COGEPAM Logo" width="40" height="40">
+                <span class="nav-logo-text">COGEPAM</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <button class="menu-close" id="menuClose" aria-label="Fermer le menu">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <a href="../../index.html" class="nav-link">Accueil</a>
+
+                <div class="nav-dropdown mega-dropdown active">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="true">
+                        Produits <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu mega-menu">
+                        <div class="mega-menu-grid">
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-snowflake"></i> Chambres Froides</h4>
+                                <a href="../chambres-froides/positive.html" class="mega-menu-item">
+                                    <span class="item-title">Chambre Positive</span>
+                                    <span class="item-desc">Conservation 0°C à +10°C</span>
+                                </a>
+                                <a href="../chambres-froides/negative.html" class="mega-menu-item">
+                                    <span class="item-title">Chambre Négative</span>
+                                    <span class="item-desc">Congélation -18°C à -25°C</span>
+                                </a>
+                                <a href="../chambres-froides/modulaire.html" class="mega-menu-item">
+                                    <span class="item-title">Chambre Modulaire</span>
+                                    <span class="item-desc">Solutions démontables</span>
+                                </a>
+                            </div>
+
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-wind"></i> Climatisation Adiabatique</h4>
+                                <a href="index.html" class="mega-menu-item featured active">
+                                    <span class="item-title">La Nature vous Rafraîchit</span>
+                                    <span class="item-desc">Technologie écologique -90% d'énergie</span>
+                                </a>
+                            </div>
+
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-th-large"></i> Panneaux & Portes</h4>
+                                <a href="../panneaux-sandwich/index.html" class="mega-menu-item">
+                                    <span class="item-title">Panneaux Sandwich</span>
+                                    <span class="item-desc">Isolation thermique</span>
+                                </a>
+                                <a href="../portes-frigorifiques/index.html" class="mega-menu-item">
+                                    <span class="item-title">Portes Frigorifiques</span>
+                                    <span class="item-desc">Coulissantes, battantes</span>
+                                </a>
+                            </div>
+
+                            <div class="mega-menu-column">
+                                <h4><i class="fas fa-cogs"></i> Équipements</h4>
+                                <a href="../refrigeration-industrielle/index.html" class="mega-menu-item">
+                                    <span class="item-title">Réfrigération Industrielle</span>
+                                    <span class="item-desc">Compresseurs, condenseurs</span>
+                                </a>
+                                <a href="../equipements/index.html" class="mega-menu-item">
+                                    <span class="item-title">Accessoires</span>
+                                    <span class="item-desc">PVC, éclairage, régulation</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="../a-propos/index.html" class="nav-link">À Propos</a>
+
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Nos Interventions <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="../interventions/maintenance-preventive.html" class="nav-dropdown-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <span class="item-main">Maintenance Préventive</span>
+                                <span class="item-sub">Contrôles programmés</span>
+                            </div>
+                        </a>
+                        <a href="../interventions/maintenance-curative.html" class="nav-dropdown-item">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <span class="item-main">Maintenance Curative</span>
+                                <span class="item-sub">Intervention 24/7</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../faq/index.html" class="nav-link">FAQ</a>
+                <a href="../contact/index.html" class="nav-link nav-cta">Contact</a>
+
+                <div class="nav-dropdown lang-dropdown">
+                    <button class="nav-dropdown-toggle lang-toggle" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="nav-flag">
+                        <span>FR</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu lang-menu">
+                        <button class="nav-dropdown-item lang-option active" data-lang="fr">
+                            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="lang-flag">
+                            <span>Français</span>
+                        </button>
+                        <button class="nav-dropdown-item lang-option" data-lang="en">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="lang-flag">
+                            <span>English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../../index.html">Accueil</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="#">Produits</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Climatisation Adiabatique</span>
+        </div>
+    </div>
+
+    <!-- Hero Section Adiabatique -->
+    <section class="adiabatique-hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="eco-badge">
+                        <i class="fas fa-leaf"></i> 100% Écologique
+                    </div>
+                    <h1>La Nature vous Rafraîchit</h1>
+                    <p class="hero-subtitle">Une technologie qui utilise l'<strong>eau comme réfrigérant</strong></p>
+                    <p class="hero-description">
+                        La climatisation adiabatique est une solution économique et écologique efficace 
+                        aux problèmes de chaleur. Jusqu'à <span class="highlight">90% d'économie d'énergie</span> 
+                        comparée à un système traditionnel.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="../contact/index.html" class="cta-button">
+                            <i class="fas fa-calculator"></i> Demander un Devis
+                        </a>
+                        <a href="#comment-ca-marche" class="cta-secondary light">
+                            <i class="fas fa-play-circle"></i> Comment ça marche ?
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="temp-comparison">
+                        <div class="temp-box outside">
+                            <i class="fas fa-sun"></i>
+                            <span class="temp">+35°C</span>
+                            <span class="label">Extérieur</span>
+                        </div>
+                        <div class="temp-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="saving">-12°C</span>
+                        </div>
+                        <div class="temp-box inside">
+                            <i class="fas fa-snowflake"></i>
+                            <span class="temp">+23°C</span>
+                            <span class="label">Intérieur</span>
+                        </div>
+                    </div>
+                    <img src="../../images/adiabatique-hero.webp" alt="" class="hero-image">
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Avantages Section -->
+    <section class="avantages-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge green">Avantages</span>
+                <h2 class="section-title">Pourquoi Choisir la Climatisation Adiabatique ?</h2>
+            </div>
+            
+            <div class="avantages-grid">
+                <div class="avantage-card">
+                    <div class="avantage-icon eco">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Écologique</h3>
+                    <p>Fonctionne <strong>sans fluide frigorigène</strong>. Seulement de l'air et de l'eau. 
+                    Réduction de 90% de la consommation énergétique.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon health">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Santé & Bien-être</h3>
+                    <p>Renouvellement constant de l'air expulsant germes et odeurs. 
+                    Air 100% frais, jamais recyclé.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon money">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Économique</h3>
+                    <p>Jusqu'à <strong>90% d'économie</strong> sur votre facture électrique. 
+                    Retour sur investissement rapide.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon comfort">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Confort Optimal</h3>
+                    <p>Température agréable tout au long de l'année. 
+                    Pas de sensation de courant d'air froid.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon durable">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Durable & Fiable</h3>
+                    <p>Installations de plus de <strong>15 ans</strong> de durée de vie. 
+                    Technologie robuste et éprouvée.</p>
+                </div>
+                
+                <div class="avantage-card">
+                    <div class="avantage-icon pro">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Idéal Professionnel</h3>
+                    <p>Conçu pour les espaces professionnels. 
+                    Grande capacité de pulser l'air si nécessaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment ça marche -->
+    <section id="comment-ca-marche" class="fonctionnement-section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-badge">Technologie</span>
+                <h2 class="section-title">Comment ça marche ?</h2>
+                <p class="section-subtitle">Un procédé innovant simple et naturel</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Air Chaud Extérieur</h3>
+                    <p>L'air chaud extérieur est aspiré par l'unité adiabatique.</p>
+                </div>
+                
+                <div class="step-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Évaporation</h3>
+                    <p>L'eau s'évapore au contact de l'air chaud, absorbant la chaleur.</p>
+                </div>
+                
+                <div class="step-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Air Rafraîchi</h3>
+                    <p>L'air est refroidi naturellement et diffusé dans le bâtiment.</p>
+                </div>
+            </div>
+            
+            <div class="cop-section">
+                <h3>Coefficient de Performance (COP)</h3>
+                <div class="cop-comparison">
+                    <div class="cop-item adiabatique">
+                        <div class="cop-value">15-25</div>
+                        <div class="cop-label">Climatisation Adiabatique</div>
+                        <div class="cop-bar" style="--width: 100%"></div>
+                    </div>
+                    <div class="cop-item traditionnelle">
+                        <div class="cop-value">3-4</div>
+                        <div class="cop-label">Climatisation Traditionnelle</div>
+                        <div class="cop-bar" style="--width: 20%"></div>
+                    </div>
+                </div>
+                <p class="cop-explanation">
+                    Plus le COP est élevé, plus le système est performant. 
+                    La climatisation adiabatique offre un COP 5 à 8 fois supérieur !
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="applications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Applications</span>
+                <h2 class="section-title">Où l'installer ?</h2>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="application-card">
+                    <img src="../../images/app-industrie.webp" alt="Industrie" loading="lazy">
+                    <div class="application-overlay">
+                        <i class="fas fa-industry"></i>
+                        <h3>Industrie</h3>
+                        <p>Usines, entrepôts, hangars</p>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <img src="../../images/app-commerce.webp" alt="Commerce" loading="lazy">
+                    <div class="application-overlay">
+                        <i class="fas fa-store"></i>
+                        <h3>Commerce</h3>
+                        <p>Magasins, showrooms, grandes surfaces</p>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <img src="../../images/app-restaurant.webp" alt="Restauration" loading="lazy">
+                    <div class="application-overlay">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Restauration</h3>
+                        <p>Restaurants, cuisines professionnelles</p>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <img src="../../images/app-agriculture.webp" alt="Agriculture" loading="lazy">
+                    <div class="application-overlay">
+                        <i class="fas fa-tractor"></i>
+                        <h3>Agriculture</h3>
+                        <p>Serres, élevages, stockage</p>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <img src="../../images/app-sport.webp" alt="Sport" loading="lazy">
+                    <div class="application-overlay">
+                        <i class="fas fa-running"></i>
+                        <h3>Sport & Loisirs</h3>
+                        <p>Gymnases, salles de sport, stades</p>
+                    </div>
+                </div>
+                
+                <div class="application-card">
+                    <img src="../../images/app-bureau.webp" alt="Bureaux" loading="lazy">
+                    <div class="application-overlay">
+                        <i class="fas fa-building"></i>
+                        <h3>Bureaux</h3>
+                        <p>Open spaces, open areas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Data -->
+    <section class="performance-section">
+        <div class="container">
+            <div class="performance-grid">
+                <div class="performance-content">
+                    <h2>Performances Réelles</h2>
+                    <p class="performance-subtitle">Données de monitoring sur nos installations</p>
+                    
+                    <div class="performance-stats">
+                        <div class="perf-item">
+                            <div class="perf-icon">
+                                <i class="fas fa-thermometer-half"></i>
+                            </div>
+                            <div class="perf-data">
+                                <span class="perf-value">-8 à -12°C</span>
+                                <span class="perf-label">Réduction de température</span>
+                            </div>
+                        </div>
+                        
+                        <div class="perf-item">
+                            <div class="perf-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="perf-data">
+                                <span class="perf-value">-90%</span>
+                                <span class="perf-label">Consommation électrique</span>
+                            </div>
+                        </div>
+                        
+                        <div class="perf-item">
+                            <div class="perf-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <div class="perf-data">
+                                <span class="perf-value">100%</span>
+                                <span class="perf-label">Air neuf (pas de recyclage)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="performance-chart">
+                    <img src="../../images/graphique-adiabatique.webp" alt="Graphique de performance" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section dark">
+        <div class="container">
+            <div class="cta-box large">
+                <h2>Prêt à Réduire vos Factures Énergétiques ?</h2>
+                <p>Demandez une étude gratuite de votre projet</p>
+                <div class="cta-buttons">
+                    <a href="../contact/index.html" class="cta-button large">
+                        <i class="fas fa-envelope"></i> Nous Contacter
+                    </a>
+                    <a href="tel:+21629077342" class="cta-secondary large">
+                        <i class="fas fa-phone"></i> +216 29 07 73 42
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../../images/logo-cogepam.webp" alt="COGEPAM" width="50" height="50">
+                        <span>COGEPAM</span>
+                    </div>
+                    <p>Expert en solutions de réfrigération industrielle et commerciale.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="../chambres-froides/index.html">Chambres Froides</a></li>
+                        <li><a href="index.html">Climatisation Adiabatique</a></li>
+                        <li><a href="../panneaux-sandwich/index.html">Panneaux Sandwich</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +216 29 07 73 42</li>
+                        <li><i class="fas fa-envelope"></i> cogepam@gbm.tn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 COGEPAM. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

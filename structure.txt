@@ -1,0 +1,43 @@
+/cogepam-website/
+│
+├── index.html                    (Page d'accueil)
+├── style.css                     (Styles globaux)
+├── script.js                     (JavaScript global)
+│
+├── /pages/                       (Pages dédiées)
+│   ├── chambres-froides/
+│   │   ├── index.html           (Landing Chambres Froides)
+│   │   ├── positive.html        (Chambre Positive)
+│   │   ├── negative.html        (Chambre Négative)
+│   │   └── modulaire.html       (Chambre Modulaire)
+│   │
+│   ├── climatisation-adiabatique/
+│   │   └── index.html           (Page Adiabatique détaillée)
+│   │
+│   ├── panneaux-sandwich/
+│   │   └── index.html           (Page Panneaux avec modèles)
+│   │
+│   ├── portes-frigorifiques/
+│   │   └── index.html           (Page Portes)
+│   │
+│   ├── refrigeration-industrielle/
+│   │   └── index.html           (Page Équipements réfrigération)
+│   │
+│   ├── equipements/
+│   │   └── index.html           (Page Équipements divers)
+│   │
+│   ├── interventions/
+│   │   ├── index.html           (Landing Interventions)
+│   │   ├── maintenance-preventive.html
+│   │   └── maintenance-curative.html
+│   │
+│   ├── a-propos/
+│   │   └── index.html           (Page À Propos)
+│   │
+│   ├── faq/
+│   │   └── index.html           (Page FAQ)
+│   │
+│   └── contact/
+│       └── index.html           (Page Contact)
+│
+└── /images/                      (Images en WebP)

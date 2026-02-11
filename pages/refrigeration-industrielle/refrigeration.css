@@ -1,0 +1,189 @@
+/* ============================================
+   PAGE RÉFRIGÉRATION INDUSTRIELLE - STYLES SPÉCIFIQUES
+   ============================================ */
+
+.breadcrumb {
+    background: var(--gray-100);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    margin-top: 70px;
+}
+
+.breadcrumb .container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.breadcrumb a {
+    color: var(--primary);
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb i {
+    font-size: 0.7rem;
+    color: var(--gray-400);
+}
+
+.refrigeration-hero {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+    padding: 6rem 0;
+    text-align: center;
+    color: var(--white);
+    margin-top: 70px;
+}
+
+.refrigeration-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.refrigeration-hero p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+}
+
+.equipements-section {
+    background: var(--gray-100);
+    padding: 5rem 0;
+}
+
+.equipements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.equip-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.equip-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.equip-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.equip-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.equip-card:hover .equip-image img {
+    transform: scale(1.1);
+}
+
+.equip-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.equip-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--gray-800);
+}
+
+.equip-content > p {
+    color: var(--gray-600);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.equip-content ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.equip-content ul li {
+    padding: 0.4rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    color: var(--gray-600);
+    font-size: 0.95rem;
+}
+
+.equip-content ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.services-section {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--gray-100);
+    border-radius: var(--radius-xl);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--gray-100) 0%, rgba(0, 107, 143, 0.05) 100%);
+}
+
+.service-card i {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-size: 1.75rem;
+}
+
+.service-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--gray-800);
+}
+
+.service-card p {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .equipements-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,631 @@
+/* ============================================
+   PAGE CLIMATISATION ADIABATIQUE - STYLES SPÉCIFIQUES
+   ============================================ */
+
+/* Breadcrumb */
+.breadcrumb {
+    background: var(--gray-100);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+.breadcrumb .container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.breadcrumb a {
+    color: var(--primary);
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb i {
+    font-size: 0.7rem;
+    color: var(--gray-400);
+}
+
+/* Hero Section Adiabatique */
+.adiabatique-hero {
+    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+    padding: 6rem 0 8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.adiabatique-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../../images/pattern-leaf.webp') center/300px;
+    opacity: 0.1;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    color: var(--white);
+}
+
+.eco-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.adiabatique-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.hero-subtitle strong {
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-description .highlight {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.hero-visual {
+    position: relative;
+}
+
+.temp-comparison {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    right: -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.temp-box {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+    min-width: 120px;
+}
+
+.temp-box i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.temp-box.outside i {
+    color: #f59e0b;
+}
+
+.temp-box.inside i {
+    color: #10b981;
+}
+
+.temp-box .temp {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gray-800);
+}
+
+.temp-box .label {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+}
+
+.temp-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.temp-arrow i {
+    font-size: 2rem;
+}
+
+.temp-arrow .saving {
+    background: var(--accent);
+    color: var(--black);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.hero-image {
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    margin-top: 4rem;
+}
+
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+}
+
+.wave-bottom svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Avantages Section */
+.avantages-section {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+.avantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.avantage-card {
+    background: var(--gray-100);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.avantage-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-lg);
+}
+
+.avantage-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.avantage-icon.eco {
+    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+.avantage-icon.health {
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+}
+
+.avantage-icon.money {
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+}
+
+.avantage-icon.comfort {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.avantage-icon.durable {
+    background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+    box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+}
+
+.avantage-icon.pro {
+    background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%);
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+}
+
+.avantage-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--gray-800);
+}
+
+.avantage-card p {
+    color: var(--gray-600);
+    line-height: 1.7;
+}
+
+/* Fonctionnement Section */
+.fonctionnement-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    padding: 5rem 0;
+    position: relative;
+}
+
+.process-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    text-align: center;
+    color: var(--white);
+    max-width: 250px;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--accent);
+    color: var(--black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.step-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.step h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.step p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.step-arrow {
+    color: var(--accent);
+    font-size: 2rem;
+}
+
+/* COP Section */
+.cop-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cop-section h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cop-comparison {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cop-item {
+    text-align: center;
+    color: var(--white);
+}
+
+.cop-value {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.cop-item.adiabatique .cop-value {
+    font-size: 4rem;
+}
+
+.cop-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+.cop-bar {
+    width: 200px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.cop-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: var(--width);
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.cop-explanation {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Applications Section */
+.applications-section {
+    background: var(--gray-100);
+    padding: 5rem 0;
+}
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.application-card {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    height: 280px;
+    cursor: pointer;
+}
+
+.application-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.application-card:hover img {
+    transform: scale(1.1);
+}
+
+.application-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.application-card:hover .application-overlay {
+    background: linear-gradient(to top, rgba(0, 107, 143, 0.9) 0%, rgba(0, 107, 143, 0.3) 100%);
+}
+
+.application-overlay i {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--accent);
+}
+
+.application-overlay h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.application-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Performance Section */
+.performance-section {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+.performance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.performance-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gray-800);
+    margin-bottom: 0.5rem;
+}
+
+.performance-subtitle {
+    color: var(--gray-600);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.performance-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.perf-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--gray-100);
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.perf-item:hover {
+    transform: translateX(10px);
+    background: linear-gradient(135deg, var(--gray-100) 0%, rgba(0, 107, 143, 0.05) 100%);
+}
+
+.perf-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.perf-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.perf-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.perf-label {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+.performance-chart img {
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+}
+
+/* CTA Section Dark */
+.cta-section.dark {
+    background: var(--gray-800);
+}
+
+.cta-box.large {
+    padding: 4rem;
+}
+
+.cta-box.large h2 {
+    font-size: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .temp-comparison {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+        flex-direction: column;
+    }
+    
+    .step-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .temp-comparison {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .temp-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .cop-comparison {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .cta-box.large {
+        padding: 2rem;
+    }
+    
+    .cta-box.large h2 {
+        font-size: 1.75rem;
+    }
+}

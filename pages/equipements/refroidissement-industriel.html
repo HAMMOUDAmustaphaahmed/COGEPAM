@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Refroidissement Industriel | COGEPAM</title>
+    <meta name="description" content="Systèmes de refroidissement industriel haute performance pour chambres froides et applications frigorifiques professionnelles.">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (même que index.html avec chemins ../../) -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <img src="../../images/logo-cogepam.webp" alt="COGEPAM Logo" width="120" height="120">
+            </a>
+            <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+            <div class="nav-links" id="navLinks">
+                <button class="menu-close" id="menuClose"><i class="fas fa-times"></i></button>
+                <a href="../../index.html" class="nav-link">Accueil</a>
+                <a href="../../index.html#products" class="nav-link active">Produits</a>
+                <a href="../a-propos/index.html" class="nav-link">À Propos</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle">Nos Interventions <i class="fas fa-chevron-down"></i></button>
+                    <div class="nav-dropdown-menu">
+                        <a href="../interventions/maintenance-preventive.html" class="nav-dropdown-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div><span class="item-main">Maintenance Préventive</span></div>
+                        </a>
+                    </div>
+                </div>
+                <a href="../faq/index.html" class="nav-link">FAQ</a>
+                <a href="../contact/index.html" class="nav-link nav-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Page -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Accueil</a> <i class="fas fa-chevron-right"></i>
+                <a href="../../index.html#products">Produits</a> <i class="fas fa-chevron-right"></i>
+                <span>Refroidissement Industriel</span>
+            </div>
+            <h1>Système de Refroidissement Industriel</h1>
+            <p>Solutions complètes de froid pour applications industrielles exigeantes</p>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../../images/equipements/refroidissement-industriel-main.webp" alt="Système de Refroidissement Industriel" id="mainImage">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="../../images/equipements/refroidissement-industriel-1.webp" alt="Vue 1" class="thumb active" onclick="changeImage(this)">
+                        <img src="../../images/equipements/refroidissement-industriel-2.webp" alt="Vue 2" class="thumb" onclick="changeImage(this)">
+                        <img src="../../images/equipements/refroidissement-industriel-3.webp" alt="Vue 3" class="thumb" onclick="changeImage(this)">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-header">
+                        <h2>Système de Refroidissement Industriel</h2>
+                        <div class="product-code">Réf: SRI-COG-2024</div>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Nos systèmes de refroidissement industriel sont conçus pour répondre aux exigences les plus strictes des applications professionnelles. 
+                        Avec une capacité de refroidissement allant de 2kW à 500kW, ils assurent une régulation précise de la température dans des environnements variés.</p>
+                    </div>
+
+                    <div class="product-specs">
+                        <h3><i class="fas fa-cogs"></i> Caractéristiques Techniques</h3>
+                        <ul class="specs-list">
+                            <li><i class="fas fa-check-circle"></i> <strong>Capacité :</strong> 2kW - 500kW</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Gamme de température :</strong> -40°C à +20°C</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Fluides frigorigènes :</strong> R404A, R448A, R449A, CO₂</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Compresseurs :</strong> Semi-hermétiques, scroll ou vis</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Contrôle :</strong> Automate programmable avec écran tactile</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Certification :</strong> CE, ISO 9001, ISO 14001</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-applications">
+                        <h3><i class="fas fa-industry"></i> Applications</h3>
+                        <div class="app-tags">
+                            <span class="app-tag"><i class="fas fa-warehouse"></i> Entrepôts frigorifiques</span>
+                            <span class="app-tag"><i class="fas fa-fish"></i> Industries agroalimentaires</span>
+                            <span class="app-tag"><i class="fas fa-flask"></i> Laboratoires pharmaceutiques</span>
+                            <span class="app-tag"><i class="fas fa-snowflake"></i> Patinoires</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="../contact/index.html" class="btn-primary">
+                            <i class="fas fa-file-invoice"></i> Demander un devis
+                        </a>
+                        <a href="tel:+21629077342" class="btn-secondary">
+                            <i class="fas fa-phone"></i> +216 29 07 73 42
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details Tabs -->
+    <section class="tech-tabs-section">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="openTab(event, 'description')">Description détaillée</button>
+                <button class="tab-btn" onclick="openTab(event, 'specs')">Spécifications</button>
+                <button class="tab-btn" onclick="openTab(event, 'docs')">Documentation</button>
+            </div>
+            
+            <div id="description" class="tab-content active">
+                <h3>Système de Refroidissement Industriel COGEPAM</h3>
+                <p>Notre gamme de systèmes de refroidissement industriel représente l'excellence en matière de régulation thermique pour applications professionnelles. 
+                Chaque unité est dimensionnée sur mesure selon vos besoins spécifiques.</p>
+                
+                <h4>Avantages clés :</h4>
+                <ul>
+                    <li><strong>Efficacité énergétique :</strong> COP élevé grâce aux compresseurs à modulation et aux échangeurs optimisés</li>
+                    <li><strong>Fiabilité :</strong> Composants de première qualité avec redondance possible</li>
+                    <li><strong>Modularité :</strong> Extension facile de la capacité selon l'évolution de vos besoins</li>
+                    <li><strong>Connectivité :</strong> Supervision à distance via smartphone ou ordinateur</li>
+                </ul>
+            </div>
+            
+            <div id="specs" class="tab-content">
+                <table class="specs-table">
+                    <tr>
+                        <th>Paramètre</th>
+                        <th>Valeur</th>
+                    </tr>
+                    <tr>
+                        <td>Plage de puissance</td>
+                        <td>2 - 500 kW</td>
+                    </tr>
+                    <tr>
+                        <td>Température évaporation</td>
+                        <td>-40°C à +15°C</td>
+                    </tr>
+                    <tr>
+                        <td>Tension d'alimentation</td>
+                        <td>400V/3Ph/50Hz (autres sur demande)</td>
+                    </tr>
+                    <tr>
+                        <td>Niveau sonore</td>
+                        <td>65-75 dB(A) selon modèle</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div id="docs" class="tab-content">
+                <div class="docs-grid">
+                    <a href="#" class="doc-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Fiche technique PDF</span>
+                    </a>
+                    <a href="#" class="doc-card">
+                        <i class="fas fa-book"></i>
+                        <span>Manuel d'installation</span>
+                    </a>
+                    <a href="#" class="doc-card">
+                        <i class="fas fa-wrench"></i>
+                        <span>Guide de maintenance</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Produits similaires</h2>
+            <div class="products-grid small">
+                <a href="unites-chiller.html" class="related-card">
+                    <img src="../../images/equipements/unites-chiller-thumb.webp" alt="Unités Chiller">
+                    <h4>Unités Chiller</h4>
+                </a>
+                <a href="unite-congelation.html" class="related-card">
+                    <img src="../../images/equipements/unite-congelation-thumb.webp" alt="Unité de Congélation">
+                    <h4>Unité de Congélation</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Besoin d'un système sur mesure ?</h2>
+                <p>Nos ingénieurs étudient votre projet gratuitement</p>
+                <a href="../contact/index.html" class="cta-button large">
+                    <i class="fas fa-calculator"></i> Étude gratuite
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 COGEPAM. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script>
+        function changeImage(thumb) {
+            document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+            document.getElementById('mainImage').src = thumb.src.replace('-thumb', '-main');
+        }
+        
+        function openTab(evt, tabName) {
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
