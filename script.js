@@ -3,12 +3,95 @@
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    initLoader();
     initNavigation();
     initScrollTop();
     initStatsCounter();
     initSmoothScroll();
 });
 
+
+
+// ============================================
+// LOADER ANIMATION
+// ============================================
+
+function initLoader() {
+    const loader = document.getElementById('pageLoader');
+    const progressBar = document.querySelector('.progress-bar');
+    
+    if (!loader) return;
+    
+    // Simuler la progression de chargement
+    let progress = 0;
+    const minLoadTime = 2500; // Temps minimum d'affichage (2.5s)
+    const startTime = Date.now();
+    
+    // Fonction pour masquer le loader
+    const hideLoader = () => {
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(0, minLoadTime - elapsedTime);
+        
+        // Attendre que le temps minimum soit écoulé
+        setTimeout(() => {
+            // Compléter la barre de progression
+            if (progressBar) {
+                progressBar.style.width = '100%';
+                progressBar.style.transition = 'width 0.3s ease';
+            }
+            
+            // Masquer le loader avec animation
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                
+                // Supprimer du DOM après l'animation
+                setTimeout(() => {
+                    loader.remove();
+                    // Déclencher l'animation des stats si visibles
+                    triggerStatsAnimation();
+                }, 600);
+            }, 300);
+            
+        }, remainingTime);
+    };
+    
+    // Attendre que tout soit chargé
+    if (document.readyState === 'complete') {
+        hideLoader();
+    } else {
+        window.addEventListener('load', hideLoader);
+    }
+    
+    // Fallback: masquer après 5s maximum (si problème de chargement)
+    setTimeout(() => {
+        if (!loader.classList.contains('hidden')) {
+            hideLoader();
+        }
+    }, 5000);
+}
+
+// Fonction pour déclencher l'animation des stats après le loader
+function triggerStatsAnimation() {
+    const stats = document.querySelectorAll('.stat-number[data-count]');
+    if (stats.length === 0) return;
+    
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = parseInt(entry.target.dataset.count);
+                animateCounter(entry.target, target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    stats.forEach(stat => observer.observe(stat));
+}
 // ============================================
 // NAVIGATION
 // ============================================

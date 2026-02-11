@@ -12,8 +12,207 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar">
-        <!-- Structure avec active sur interventions -->
+        <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <img src="../../images/logo-cogepam.webp" alt="COGEPAM Logo" width="150" height="150">
+                
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <button class="menu-close" id="menuClose" aria-label="Fermer le menu">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- Accueil -->
+                <a href="../../index.html" class="nav-link active">Accueil</a>
+
+                <!-- Produits (Menu Déroulant Classique) -->
+<div class="nav-dropdown">
+    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+        Produits <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="nav-dropdown-menu classic-menu">
+        
+        <!-- Chambres Froides (Sous-menu) -->
+        <div class="nav-dropdown-submenu">
+            <button class="nav-dropdown-item has-submenu">
+                <i class="fas fa-snowflake"></i>
+                <div>
+                    <span class="item-main">Chambres Froides</span>
+                </div>
+                <i class="fas fa-chevron-right submenu-arrow"></i>
+            </button>
+            <div class="submenu">
+                <a href="../../pages/chambres-froides/positive.html" class="submenu-item">
+                    <span class="item-title">Chambre Positive</span>
+                    <span class="item-desc">Conservation 0°C à +10°C</span>
+                </a>
+                <a href="../../pages/chambres-froides/negative.html" class="submenu-item">
+                    <span class="item-title">Chambre Négative</span>
+                    <span class="item-desc">Congélation -18°C à -25°C</span>
+                </a>
+                <a href="../../pages/chambres-froides/modulaire.html" class="submenu-item">
+                    <span class="item-title">Chambre Modulaire</span>
+                    <span class="item-desc">Solutions démontables</span>
+                </a>
+                <a href="../../pages/chambres-froides/index.html" class="submenu-item view-all">
+                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Climatisation Adiabatique (Lien direct) -->
+        <a href="../../pages/climatisation-adiabatique/index.html" class="nav-dropdown-item">
+            <i class="fas fa-wind"></i>
+            <div>
+                <span class="item-main">Climatisation Adiabatique</span>
+                <span class="item-desc">La Nature vous Rafraîchit</span>
+            </div>
+        </a>
+
+        <!-- Portes (Lien direct) -->
+        <a href="../../pages/portes-frigorifiques/index.html" class="nav-dropdown-item">
+            <i class="fas fa-door-open"></i>
+            <div>
+                <span class="item-main">Portes Frigorifiques</span>
+                <span class="item-desc">Coulissantes, battantes, rideaux</span>
+            </div>
+        </a>
+
+        <!-- Équipements (Sous-menu) -->
+        <div class="nav-dropdown-submenu">
+            <button class="nav-dropdown-item has-submenu">
+                <i class="fas fa-cogs"></i>
+                <div>
+                    <span class="item-main">Équipements</span>
+                </div>
+                <i class="fas fa-chevron-right submenu-arrow"></i>
+            </button>
+            <div class="submenu">
+                <a href="../../pages/equipements/refroidissement-industriel.html" class="submenu-item">
+                    <span class="item-title">Système de Refroidissement Industriel</span>
+                </a>
+                <a href="../../pages/equipements/refroidissement-central.html" class="submenu-item">
+                    <span class="item-title">Système de Refroidissement Central</span>
+                </a>
+                <a href="../../pages/equipements/refroidissement-monobloc.html" class="submenu-item">
+                    <span class="item-title">Système Monobloc</span>
+                </a>
+                <a href="../../pages/equipements/refroidissement-split.html" class="submenu-item">
+                    <span class="item-title">Système Split</span>
+                </a>
+                <a href="../../pages/equipements/unite-congelation.html" class="submenu-item">
+                    <span class="item-title">Unité de Congélation</span>
+                </a>
+                <a href="../../pages/equipements/unites-chiller.html" class="submenu-item">
+                    <span class="item-title">Unités Chiller</span>
+                </a>
+                <a href="../../pages/equipements/index.html" class="submenu-item view-all">
+                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Accessoires (Sous-menu) -->
+        <div class="nav-dropdown-submenu">
+            <button class="nav-dropdown-item has-submenu">
+                <i class="fas fa-puzzle-piece"></i>
+                <div>
+                    <span class="item-main">Accessoires</span>
+                </div>
+                <i class="fas fa-chevron-right submenu-arrow"></i>
+            </button>
+            <div class="submenu">
+                <a href="../../pages/accessoires/bande-pvc.html" class="submenu-item">
+                    <span class="item-title">Bande PVC</span>
+                    <span class="item-desc">Rideaux à lamelles souples</span>
+                </a>
+                <a href="../../pages/accessoires/etageres.html" class="submenu-item">
+                    <span class="item-title">Étagères</span>
+                    <span class="item-desc">Rangement inox et aluminium</span>
+                </a>
+                <a href="../../pages/accessoires/soupape-surpression.html" class="submenu-item">
+                    <span class="item-title">Soupape de Surpression</span>
+                    <span class="item-desc">Sécurité différence de pression</span>
+                </a>
+                <a href="../../pages/accessoires/control-panel.html" class="submenu-item">
+                    <span class="item-title">Control Panel</span>
+                    <span class="item-desc">Régulation électronique</span>
+                </a>
+                <a href="../../pages/accessoires/light.html" class="submenu-item">
+                    <span class="item-title">Light</span>
+                    <span class="item-desc">Éclairage LED étanche</span>
+                </a>
+                <a href="../../pages/accessoires/index.html" class="submenu-item view-all">
+                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                <!-- À Propos -->
+                <a href="../../pages/a-propos/index.html" class="nav-link">À Propos</a>
+
+                <!-- Nos Interventions -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Nos Interventions <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="../../pages/interventions/maintenance-preventive.html" class="nav-dropdown-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <span class="item-main">Maintenance Préventive</span>
+                                <span class="item-sub">Contrôles programmés</span>
+                            </div>
+                        </a>
+                        <a href="../../pages/interventions/maintenance-curative.html" class="nav-dropdown-item">
+                            <i class="fas fa-tools"></i>
+                            <div>
+                                <span class="item-main">Maintenance Curative</span>
+                                <span class="item-sub">Intervention 24/7</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <a href="../../pages/faq/index.html" class="nav-link">FAQ</a>
+
+                <!-- Contact -->
+                <a href="../../pages/contact/index.html" class="nav-link nav-cta">Contact</a>
+
+                <!-- Langue (Menu Déroulant Simple) -->
+<div class="nav-dropdown lang-dropdown">
+    <button class="nav-dropdown-toggle lang-toggle" aria-haspopup="true" aria-expanded="false">
+        <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="nav-flag" id="navFlag">
+        <span id="navLang">FR</span>
+        <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="nav-dropdown-menu lang-menu simple-menu">
+        <a href="?lang=fr" class="nav-dropdown-item lang-option active" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="lang-flag">
+            <span>Français</span>
+        </a>
+        <a href="?lang=en" class="nav-dropdown-item lang-option" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="lang-flag">
+            <span>English</span>
+        </a>
+        <a href="?lang=ar" class="nav-dropdown-item lang-option" data-lang="ar">
+            <img src="https://flagcdn.com/w40/tn.png" alt="AR" class="lang-flag">
+            <span>العربية</span>
+        </a>
+    </div>
+</div>
+            </div>
+        </div>
     </nav>
     
     <div class="nav-overlay" id="navOverlay"></div>
@@ -126,7 +325,52 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- Footer standard -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../../images/logo-cogepam.webp" alt="COGEPAM" width="50" height="50">
+                        
+                    </div>
+                    <p>Expert en solutions de réfrigération industrielle et commerciale. Filiale du Groupe Bayoudh Metals.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="../../pages/chambres-froides/index.html">Chambres Froides</a></li>
+                        <li><a href="../../pages/climatisation-adiabatique/index.html">Climatisation Adiabatique</a></li>
+                        <li><a href="../../pages/panneaux-sandwich/index.html">Panneaux Sandwich</a></li>
+                        <li><a href="../../pages/portes-frigorifiques/index.html">Portes Frigorifiques</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../../pages/interventions/maintenance-preventive.html">Maintenance Préventive</a></li>
+                        <li><a href="../../pages/interventions/maintenance-curative.html">Maintenance Curative</a></li>
+                        <li><a href="../../pages/a-propos/index.html">À Propos</a></li>
+                        <li><a href="../../pages/faq/index.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Z.I Menzel Harb, Monastir, Tunisie</li>
+                        <li><i class="fas fa-phone"></i> +216 29 07 73 42</li>
+                        <li><i class="fas fa-phone"></i> +216 29 67 81 00</li>
+                        <li><i class="fas fa-envelope"></i> cogepam@gbm.tn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 COGEPAM. Tous droits réservés. | Filiale du Groupe Bayoudh Metals (GBM)</p>
+            </div>
+        </div>
     </footer>
 
     <script src="../../script.js"></script>

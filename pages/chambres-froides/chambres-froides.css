@@ -5,9 +5,9 @@
 /* Breadcrumb */
 .breadcrumb {
     background: var(--gray-100);
-    padding: 1rem 0;
+    padding: 3rem 0;
     font-size: 0.9rem;
-    color: var(--gray-600);
+    color: var(black);
     margin-top: 70px;
 }
 
