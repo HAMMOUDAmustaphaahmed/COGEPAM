@@ -20,11 +20,20 @@ function initLoader() {
     const loader = document.getElementById('pageLoader');
     const progressBar = document.querySelector('.progress-bar');
     
-    if (!loader) return;
+    if (!loader) {
+        console.log('Loader not found');
+        return;
+    }
     
-    // Simuler la progression de chargement
+    // Vérifier si déjà chargé (cache)
+    if (sessionStorage.getItem('cogepam-loaded')) {
+        loader.style.display = 'none';
+        loader.remove();
+        return;
+    }
+    
     let progress = 0;
-    const minLoadTime = 2500; // Temps minimum d'affichage (2.5s)
+    const minLoadTime = 2000; // 2 secondes minimum
     const startTime = Date.now();
     
     // Fonction pour masquer le loader
@@ -32,42 +41,53 @@ function initLoader() {
         const elapsedTime = Date.now() - startTime;
         const remainingTime = Math.max(0, minLoadTime - elapsedTime);
         
-        // Attendre que le temps minimum soit écoulé
         setTimeout(() => {
-            // Compléter la barre de progression
-            if (progressBar) {
-                progressBar.style.width = '100%';
-                progressBar.style.transition = 'width 0.3s ease';
-            }
+            // Animation de sortie
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.5s ease';
             
-            // Masquer le loader avec animation
             setTimeout(() => {
-                loader.classList.add('hidden');
-                
-                // Supprimer du DOM après l'animation
-                setTimeout(() => {
-                    loader.remove();
-                    // Déclencher l'animation des stats si visibles
-                    triggerStatsAnimation();
-                }, 600);
-            }, 300);
+                loader.style.display = 'none';
+                loader.remove();
+                sessionStorage.setItem('cogepam-loaded', 'true');
+                triggerStatsAnimation();
+            }, 500);
             
         }, remainingTime);
     };
     
-    // Attendre que tout soit chargé
+    // Méthode 1: Attendre load event
+    const onLoad = () => {
+        // Simuler progression visuelle
+        let visualProgress = 0;
+        const progressInterval = setInterval(() => {
+            visualProgress += Math.random() * 15;
+            if (visualProgress > 90) visualProgress = 90;
+            if (progressBar) progressBar.style.width = visualProgress + '%';
+        }, 200);
+        
+        // Arrêter la progression et compléter
+        setTimeout(() => {
+            clearInterval(progressInterval);
+            if (progressBar) progressBar.style.width = '100%';
+            hideLoader();
+        }, minLoadTime - 500);
+    };
+    
+    // Méthode 2: Fallback si load déjà déclenché
     if (document.readyState === 'complete') {
-        hideLoader();
+        onLoad();
     } else {
-        window.addEventListener('load', hideLoader);
+        window.addEventListener('load', onLoad);
     }
     
-    // Fallback: masquer après 5s maximum (si problème de chargement)
+    // Méthode 3: Fallback maximum 4s (pour Opera mobile)
     setTimeout(() => {
-        if (!loader.classList.contains('hidden')) {
+        if (loader.style.display !== 'none') {
+            if (progressBar) progressBar.style.width = '100%';
             hideLoader();
         }
-    }, 5000);
+    }, 4000);
 }
 
 // Fonction pour déclencher l'animation des stats après le loader
