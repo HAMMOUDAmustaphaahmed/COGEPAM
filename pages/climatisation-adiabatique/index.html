@@ -13,6 +13,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+        <script>
+        // Slider 3D Functionality
+        let currentSlide = 0;
+        const totalSlides = 5;
+        let autoSlideInterval;
+
+        function updateSlides() {
+            const slides = document.querySelectorAll('.slide-3d');
+            const dots = document.querySelectorAll('.dot');
+            
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev', 'next', 'hidden');
+                
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                } else if (index === (currentSlide - 1 + totalSlides) % totalSlides) {
+                    slide.classList.add('prev');
+                } else if (index === (currentSlide + 1) % totalSlides) {
+                    slide.classList.add('next');
+                } else {
+                    slide.classList.add('hidden');
+                }
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            updateSlides();
+            resetAutoSlide();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlides();
+            resetAutoSlide();
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(() => changeSlide(1), 5000);
+        }
+
+        // Initialize
+        updateSlides();
+        autoSlideInterval = setInterval(() => changeSlide(1), 5000);
+
+        // Pause on hover
+        const sliderContainer = document.querySelector('.slider-3d-container');
+        sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+        sliderContainer.addEventListener('mouseleave', resetAutoSlide);
+
+        // Touch support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        sliderContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        sliderContainer.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) changeSlide(1);
+            if (touchEndX - touchStartX > 50) changeSlide(-1);
+        });
+    </script>
     <!-- Navigation (même structure avec chemins relatifs ../../) -->
         <nav id="navbar" class="navbar">
         <div class="nav-container">
@@ -529,7 +598,111 @@
             </div>
         </div>
     </section>
-
+    <!-- Nos Réalisations et Interventions -->
+    <section class="realisation-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge green">
+                    <i class="fas fa-check-circle"></i> Nos Réalisations
+                </span>
+                <h2>Nos Réalisations & Interventions</h2>
+                <p class="section-subtitle">
+                    Découvrez nos projets de climatisation adiabatique et interventions techniques à travers la Tunisie
+                </p>
+            </div>
+            
+            <div class="slider-3d-container">
+                <div class="slider-3d-wrapper" id="slider3d">
+                    <!-- Slide 1 -->
+                    <div class="slide-3d active" data-index="0">
+                        <img src="https://kimi-web-img.moonshot.cn/img/www.powrmatic.com/6f9f909e3a81c720199d5ce5457c2a2e84f700b3.jpg" alt="Installation entrepôt">
+                        <div class="slide-content">
+                            <span class="slide-tag">Installation</span>
+                            <h3><i class="fas fa-warehouse"></i> Refroidissement Entrepôt</h3>
+                            <p>Installation complète de systèmes adiabatiques dans un entrepôt de 5000m² à Monastir. Réduction de température de 12°C.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide-3d next" data-index="1">
+                        <img src="../../images/adiabatique2.webp" alt="Tour de refroidissement">
+                        <div class="slide-content">
+                            <span class="slide-tag">Maintenance</span>
+                            <h3><i class="fas fa-tools"></i> Maintenance Industrielle</h3>
+                            <p>Intervention curative sur tour de refroidissement adiabatique. Remplacement des médias et optimisation des flux d'air.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide-3d hidden" data-index="2">
+                        <img src="https://kimi-web-img.moonshot.cn/img/coolingbestpractices.com/3de0617f90a63b69c2e07cf58c3853384f0ce340.jpg" alt="Système adiabatique">
+                        <div class="slide-content">
+                            <span class="slide-tag">Installation</span>
+                            <h3><i class="fas fa-industry"></i> Unité de Production</h3>
+                            <p>Installation de 4 unités adiabatiques pour le refroidissement d'une unité de production agroalimentaire à Sousse.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="slide-3d hidden" data-index="3">
+                        <img src="https://kimi-web-img.moonshot.cn/img/www.powrmatic.com/95942041b2f5147d9b72cc3176b8c9349c2c7b4b.jpg" alt="Ventilation industrielle">
+                        <div class="slide-content">
+                            <span class="slide-tag">Intervention</span>
+                            <h3><i class="fas fa-wind"></i> Optimisation Ventilation</h3>
+                            <p>Audit et optimisation d'un système existant. Amélioration de l'efficacité énergétique de 25%.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 -->
+                    <div class="slide-3d prev" data-index="4">
+                        <img src="../../images/adiabatique3.webp" alt="Refroidissement extérieur">
+                        <div class="slide-content">
+                            <span class="slide-tag">Installation</span>
+                            <h3><i class="fas fa-building"></i> Complexe Commercial</h3>
+                            <p>Installation de systèmes de refroidissement évaporatif pour un complexe commercial à Tunis. Économie d'énergie de 85%.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <button class="slider-nav prev-btn" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav next-btn" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Dots -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                    <span class="dot" onclick="goToSlide(4)"></span>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="realisation-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Installations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Clients Satisfaits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Technique</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15ans</div>
+                    <div class="stat-label">Expérience</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- CTA Section -->
     <section class="cta-section dark">
         <div class="container">
