@@ -3,20 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Équipements et accessoires COGEPAM - PVC strip curtains, éclairage LED, tableaux de contrôle et régulation pour chambres froides.">
-    <title>Équipements & Accessoires | PVC, LED, Régulation - COGEPAM</title>
+    <meta name="description" content="Équipements et accessoires COGEPAM - Systèmes de refroidissement, unités de condensation, régulation électronique pour chambres froides.">
+    <meta name="keywords" content="équipements frigorifiques, système refroidissement, unité condensation, régulation électronique, chambre froide, Tunisie">
+    <meta name="author" content="COGEPAM">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Équipements Frigorifiques - COGEPAM">
+    <meta property="og:description" content="Systèmes de refroidissement industriels et commerciaux pour chambres froides.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cogepam.tn/pages/equipements/">
+    
+    <title>Équipements Frigorifiques | Systèmes de Refroidissement - COGEPAM</title>
+    
     <link rel="canonical" href="https://www.cogepam.tn/pages/equipements/">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="equipements.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Inline pour cette page -->
+    <style>
+        /* Hero Section */
+        .equipements-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            padding: 8rem 0 4rem;
+            margin-top: 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .equipements-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('../../images/pattern.webp') center/400px;
+            opacity: 0.1;
+        }
+        
+        .equipements-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .equipements-hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .equipements-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--gray-100);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .breadcrumb .container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary);
+            transition: opacity 0.3s;
+        }
+        
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+        
+        .breadcrumb i {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+        }
+        
+        /* Categories Section */
+        .categories-section {
+            padding: 5rem 0;
+            background: var(--gray-100);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(54, 81, 148, 0.1);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .section-subtitle {
+            color: var(--gray-600);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Categories Grid */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-200);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .category-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            color: var(--white);
+            box-shadow: 0 10px 30px rgba(54, 81, 148, 0.3);
+        }
+        
+        .category-card h3 {
+            font-size: 1.5rem;
+            color: var(--gray-800);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .category-card > p {
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .category-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .category-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            color: var(--gray-700);
+            font-size: 0.95rem;
+            border-bottom: 1px solid var(--gray-100);
+        }
+        
+        .category-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .category-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--success);
+            font-size: 0.85rem;
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(54, 81, 148, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(54, 81, 148, 0.4);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .equipements-hero {
+                padding: 6rem 0 3rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
-        <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar">
         <div class="nav-container">
             <a href="../../index.html" class="nav-logo">
-                <img src="../../images/logo-cogepam.webp" alt="COGEPAM Logo" width="150" height="150">
-                
+                <img src="../../images/logo-cogepam.webp" alt="COGEPAM Logo" width="150" height="150" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:1.5rem;font-weight:800;color:var(--primary);\'>COGEPAM</span>';">
             </a>
             
             <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -28,139 +272,130 @@
                     <i class="fas fa-times"></i>
                 </button>
 
-                <!-- Accueil -->
-                <a href="../../index.html" class="nav-link active">Accueil</a>
+                <a href="../../index.html" class="nav-link">Accueil</a>
 
-                <!-- Produits (Menu Déroulant Classique) -->
-<div class="nav-dropdown">
-    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-        Produits <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="nav-dropdown-menu classic-menu">
-        
-        <!-- Chambres Froides (Sous-menu) -->
-        <div class="nav-dropdown-submenu">
-            <button class="nav-dropdown-item has-submenu">
-                <i class="fas fa-snowflake"></i>
-                <div>
-                    <span class="item-main">Chambres Froides</span>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Produits <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu classic-menu">
+                        
+                        <div class="nav-dropdown-submenu">
+                            <button class="nav-dropdown-item has-submenu">
+                                <i class="fas fa-snowflake"></i>
+                                <div>
+                                    <span class="item-main">Chambres Froides</span>
+                                </div>
+                                <i class="fas fa-chevron-right submenu-arrow"></i>
+                            </button>
+                            <div class="submenu">
+                                <a href="../../pages/chambres-froides/positive.html" class="submenu-item">
+                                    <span class="item-title">Chambre Positive</span>
+                                    <span class="item-desc">Conservation 0°C à +10°C</span>
+                                </a>
+                                <a href="../../pages/chambres-froides/negative.html" class="submenu-item">
+                                    <span class="item-title">Chambre Négative</span>
+                                    <span class="item-desc">Congélation -18°C à -25°C</span>
+                                </a>
+                                <a href="../../pages/chambres-froides/modulaire.html" class="submenu-item">
+                                    <span class="item-title">Chambre Modulaire</span>
+                                    <span class="item-desc">Solutions démontables</span>
+                                </a>
+                                <a href="../../pages/chambres-froides/index.html" class="submenu-item view-all">
+                                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="../../pages/climatisation-adiabatique/index.html" class="nav-dropdown-item">
+                            <i class="fas fa-wind"></i>
+                            <div>
+                                <span class="item-main">Climatisation Adiabatique</span>
+                                <span class="item-desc">La Nature vous Rafraîchit</span>
+                            </div>
+                        </a>
+
+                        <a href="../../pages/portes-frigorifiques/index.html" class="nav-dropdown-item">
+                            <i class="fas fa-door-open"></i>
+                            <div>
+                                <span class="item-main">Portes Frigorifiques</span>
+                                <span class="item-desc">Coulissantes, battantes, rideaux</span>
+                            </div>
+                        </a>
+
+                        <div class="nav-dropdown-submenu">
+                            <button class="nav-dropdown-item has-submenu">
+                                <i class="fas fa-cogs"></i>
+                                <div>
+                                    <span class="item-main">Équipements</span>
+                                </div>
+                                <i class="fas fa-chevron-right submenu-arrow"></i>
+                            </button>
+                            <div class="submenu">
+                                <a href="../../pages/equipements/refroidissement-industriel.html" class="submenu-item">
+                                    <span class="item-title">Système de Refroidissement Industriel</span>
+                                </a>
+                                <a href="../../pages/equipements/refroidissement-central.html" class="submenu-item">
+                                    <span class="item-title">Système de Refroidissement Central</span>
+                                </a>
+                                <a href="../../pages/equipements/refroidissement-monobloc.html" class="submenu-item">
+                                    <span class="item-title">Système Monobloc</span>
+                                </a>
+                                <a href="../../pages/equipements/refroidissement-split.html" class="submenu-item">
+                                    <span class="item-title">Système Split</span>
+                                </a>
+                                <a href="../../pages/equipements/unite-congelation.html" class="submenu-item">
+                                    <span class="item-title">Unité de Congélation</span>
+                                </a>
+                                <a href="../../pages/equipements/unites-chiller.html" class="submenu-item">
+                                    <span class="item-title">Unités Chiller</span>
+                                </a>
+                                <a href="../../pages/equipements/index.html" class="submenu-item view-all">
+                                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nav-dropdown-submenu">
+                            <button class="nav-dropdown-item has-submenu">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <div>
+                                    <span class="item-main">Accessoires</span>
+                                </div>
+                                <i class="fas fa-chevron-right submenu-arrow"></i>
+                            </button>
+                            <div class="submenu">
+                                <a href="../../pages/accessoires/bande-pvc.html" class="submenu-item">
+                                    <span class="item-title">Bande PVC</span>
+                                    <span class="item-desc">Rideaux à lamelles souples</span>
+                                </a>
+                                <a href="../../pages/accessoires/etageres.html" class="submenu-item">
+                                    <span class="item-title">Étagères</span>
+                                    <span class="item-desc">Rangement inox et aluminium</span>
+                                </a>
+                                <a href="../../pages/accessoires/soupape-surpression.html" class="submenu-item">
+                                    <span class="item-title">Soupape de Surpression</span>
+                                    <span class="item-desc">Sécurité différence de pression</span>
+                                </a>
+                                <a href="../../pages/accessoires/control-panel.html" class="submenu-item">
+                                    <span class="item-title">Control Panel</span>
+                                    <span class="item-desc">Régulation électronique</span>
+                                </a>
+                                <a href="../../pages/accessoires/light.html" class="submenu-item">
+                                    <span class="item-title">Light</span>
+                                    <span class="item-desc">Éclairage LED étanche</span>
+                                </a>
+                                <a href="../../pages/accessoires/index.html" class="submenu-item view-all">
+                                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <i class="fas fa-chevron-right submenu-arrow"></i>
-            </button>
-            <div class="submenu">
-                <a href="../../pages/chambres-froides/positive.html" class="submenu-item">
-                    <span class="item-title">Chambre Positive</span>
-                    <span class="item-desc">Conservation 0°C à +10°C</span>
-                </a>
-                <a href="../../pages/chambres-froides/negative.html" class="submenu-item">
-                    <span class="item-title">Chambre Négative</span>
-                    <span class="item-desc">Congélation -18°C à -25°C</span>
-                </a>
-                <a href="../../pages/chambres-froides/modulaire.html" class="submenu-item">
-                    <span class="item-title">Chambre Modulaire</span>
-                    <span class="item-desc">Solutions démontables</span>
-                </a>
-                <a href="../../pages/chambres-froides/index.html" class="submenu-item view-all">
-                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </div>
 
-        <!-- Climatisation Adiabatique (Lien direct) -->
-        <a href="../../pages/climatisation-adiabatique/index.html" class="nav-dropdown-item">
-            <i class="fas fa-wind"></i>
-            <div>
-                <span class="item-main">Climatisation Adiabatique</span>
-                <span class="item-desc">La Nature vous Rafraîchit</span>
-            </div>
-        </a>
-
-        <!-- Portes (Lien direct) -->
-        <a href="../../pages/portes-frigorifiques/index.html" class="nav-dropdown-item">
-            <i class="fas fa-door-open"></i>
-            <div>
-                <span class="item-main">Portes Frigorifiques</span>
-                <span class="item-desc">Coulissantes, battantes, rideaux</span>
-            </div>
-        </a>
-
-        <!-- Équipements (Sous-menu) -->
-        <div class="nav-dropdown-submenu">
-            <button class="nav-dropdown-item has-submenu">
-                <i class="fas fa-cogs"></i>
-                <div>
-                    <span class="item-main">Équipements</span>
-                </div>
-                <i class="fas fa-chevron-right submenu-arrow"></i>
-            </button>
-            <div class="submenu">
-                <a href="../../pages/equipements/refroidissement-industriel.html" class="submenu-item">
-                    <span class="item-title">Système de Refroidissement Industriel</span>
-                </a>
-                <a href="../../pages/equipements/refroidissement-central.html" class="submenu-item">
-                    <span class="item-title">Système de Refroidissement Central</span>
-                </a>
-                <a href="../../pages/equipements/refroidissement-monobloc.html" class="submenu-item">
-                    <span class="item-title">Système Monobloc</span>
-                </a>
-                <a href="../../pages/equipements/refroidissement-split.html" class="submenu-item">
-                    <span class="item-title">Système Split</span>
-                </a>
-                <a href="../../pages/equipements/unite-congelation.html" class="submenu-item">
-                    <span class="item-title">Unité de Congélation</span>
-                </a>
-                <a href="../../pages/equipements/unites-chiller.html" class="submenu-item">
-                    <span class="item-title">Unités Chiller</span>
-                </a>
-                <a href="../../pages/equipements/index.html" class="submenu-item view-all">
-                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Accessoires (Sous-menu) -->
-        <div class="nav-dropdown-submenu">
-            <button class="nav-dropdown-item has-submenu">
-                <i class="fas fa-puzzle-piece"></i>
-                <div>
-                    <span class="item-main">Accessoires</span>
-                </div>
-                <i class="fas fa-chevron-right submenu-arrow"></i>
-            </button>
-            <div class="submenu">
-                <a href="../../pages/accessoires/bande-pvc.html" class="submenu-item">
-                    <span class="item-title">Bande PVC</span>
-                    <span class="item-desc">Rideaux à lamelles souples</span>
-                </a>
-                <a href="../../pages/accessoires/etageres.html" class="submenu-item">
-                    <span class="item-title">Étagères</span>
-                    <span class="item-desc">Rangement inox et aluminium</span>
-                </a>
-                <a href="../../pages/accessoires/soupape-surpression.html" class="submenu-item">
-                    <span class="item-title">Soupape de Surpression</span>
-                    <span class="item-desc">Sécurité différence de pression</span>
-                </a>
-                <a href="../../pages/accessoires/control-panel.html" class="submenu-item">
-                    <span class="item-title">Control Panel</span>
-                    <span class="item-desc">Régulation électronique</span>
-                </a>
-                <a href="../../pages/accessoires/light.html" class="submenu-item">
-                    <span class="item-title">Light</span>
-                    <span class="item-desc">Éclairage LED étanche</span>
-                </a>
-                <a href="../../pages/accessoires/index.html" class="submenu-item view-all">
-                    <span>Voir tout <i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-                <!-- À Propos -->
                 <a href="../../pages/a-propos/index.html" class="nav-link">À Propos</a>
 
-                <!-- Nos Interventions -->
                 <div class="nav-dropdown">
                     <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
                         Nos Interventions <i class="fas fa-chevron-down dropdown-arrow"></i>
@@ -183,34 +418,31 @@
                     </div>
                 </div>
 
-                <!-- FAQ -->
                 <a href="../../pages/faq/index.html" class="nav-link">FAQ</a>
 
-                <!-- Contact -->
                 <a href="../../pages/contact/index.html" class="nav-link nav-cta">Contact</a>
 
-                <!-- Langue (Menu Déroulant Simple) -->
-<div class="nav-dropdown lang-dropdown">
-    <button class="nav-dropdown-toggle lang-toggle" aria-haspopup="true" aria-expanded="false">
-        <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="nav-flag" id="navFlag">
-        <span id="navLang">FR</span>
-        <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="nav-dropdown-menu lang-menu simple-menu">
-        <a href="?lang=fr" class="nav-dropdown-item lang-option active" data-lang="fr">
-            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="lang-flag">
-            <span>Français</span>
-        </a>
-        <a href="?lang=en" class="nav-dropdown-item lang-option" data-lang="en">
-            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="lang-flag">
-            <span>English</span>
-        </a>
-        <a href="?lang=ar" class="nav-dropdown-item lang-option" data-lang="ar">
-            <img src="https://flagcdn.com/w40/tn.png" alt="AR" class="lang-flag">
-            <span>العربية</span>
-        </a>
-    </div>
-</div>
+                <div class="nav-dropdown lang-dropdown">
+                    <button class="nav-dropdown-toggle lang-toggle" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="nav-flag" id="navFlag">
+                        <span id="navLang">FR</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="nav-dropdown-menu lang-menu simple-menu">
+                        <a href="?lang=fr" class="nav-dropdown-item lang-option active" data-lang="fr">
+                            <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="lang-flag">
+                            <span>Français</span>
+                        </a>
+                        <a href="?lang=en" class="nav-dropdown-item lang-option" data-lang="en">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="lang-flag">
+                            <span>English</span>
+                        </a>
+                        <a href="?lang=ar" class="nav-dropdown-item lang-option" data-lang="ar">
+                            <img src="https://flagcdn.com/w40/tn.png" alt="AR" class="lang-flag">
+                            <span>العربية</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -222,124 +454,155 @@
         <div class="container">
             <a href="../../index.html">Accueil</a>
             <i class="fas fa-chevron-right"></i>
-            <span>Équipements & Accessoires</span>
+            <span>Équipements</span>
         </div>
     </div>
 
     <!-- Hero -->
     <section class="equipements-hero">
         <div class="container">
-            <h1>Équipements & Accessoires</h1>
-            <p>Tous les accessoires nécessaires pour votre installation frigorifique</p>
+            <h1>Équipements Frigorifiques</h1>
+            <p>Systèmes de refroidissement industriels et commerciaux pour chambres froides - Du monobloc au centralisé</p>
         </div>
     </section>
 
-    <!-- Catégories -->
+    <!-- Categories -->
     <section class="categories-section">
         <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nos Solutions</span>
+                <h2 class="section-title">Gamme d'Équipements</h2>
+                <p class="section-subtitle">Des solutions complètes adaptées à tous vos besoins de réfrigération industrielle</p>
+            </div>
+            
             <div class="categories-grid">
-                <!-- PVC Strip -->
+                <!-- Refroidissement Industriel -->
                 <div class="category-card">
                     <div class="category-icon">
-                        <i class="fas fa-grip-lines-vertical"></i>
+                        <i class="fas fa-industry"></i>
                     </div>
-                    <h3>Rideaux PVC Strip</h3>
-                    <p>Lanières PVC souples pour séparation thermique sans obstacle au passage.</p>
+                    <h3>Système de Refroidissement Industriel</h3>
+                    <p>Solutions robustes pour grandes installations et applications industrielles exigeantes.</p>
                     <ul class="category-list">
-                        <li>Lanières transparentes standards</li>
-                        <li>Lanières opaques pour chambres négatives</li>
-                        <li>Antistatiques pour environnement sensible</li>
-                        <li>Antibactériennes pour agroalimentaire</li>
-                        <li>Kit de suspension complet</li>
+                        <li>Compresseurs semi-hermétiques</li>
+                        <li>Evaporateurs à dégivrage automatique</li>
+                        <li>Condenseurs air/eau haute performance</li>
+                        <li>Centrales frigorifiques modulaires</li>
+                        <li>Automatismes avancés</li>
                     </ul>
-                    <a href="../contact/index.html" class="btn-primary">En savoir plus</a>
+                    <a href="refroidissement-industriel.html" class="btn-primary">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Éclairage LED -->
+                <!-- Refroidissement Central -->
                 <div class="category-card">
                     <div class="category-icon">
-                        <i class="fas fa-lightbulb"></i>
+                        <i class="fas fa-snowflake"></i>
                     </div>
-                    <h3>Éclairage LED</h3>
-                    <p>Éclairage spécifique pour environnement froid et humide.</p>
+                    <h3>Système de Refroidissement Central</h3>
+                    <p>Unités centrales pour alimenter plusieurs chambres avec une seule machine.</p>
                     <ul class="category-list">
-                        <li>Étanches IP65 minimum</li>
-                        <li>Résistant au froid -40°C</li>
-                        <li>Faible consommation énergétique</li>
-                        <li>Longue durée de vie (>50 000h)</li>
-                        <li>Installation suspendue ou murale</li>
+                        <li>Centrales de condensation</li>
+                        <li>Distribution multipostes</li>
+                        <li>Régulation zonnée intelligente</li>
+                        <li>Récupération de chaleur</li>
+                        <li>Optimisation énergétique</li>
                     </ul>
-                    <a href="../contact/index.html" class="btn-primary">En savoir plus</a>
+                    <a href="refroidissement-central.html" class="btn-primary">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Régulation -->
+                <!-- Système Monobloc -->
                 <div class="category-card">
                     <div class="category-icon">
-                        <i class="fas fa-sliders-h"></i>
+                        <i class="fas fa-cube"></i>
                     </div>
-                    <h3>Tableaux & Régulation</h3>
-                    <p>Armoires électriques et systèmes de contrôle pour chambres froides.</p>
+                    <h3>Système Monobloc</h3>
+                    <p>Solution tout-en-un compacte idéale pour les petites et moyennes chambres.</p>
                     <ul class="category-list">
-                        <li>Tableaux électriques pré-câblés</li>
-                        <li>Thermostats digitaux programmables</li>
-                        <li>Enregistreurs de température</li>
-                        <li>Alarmes visuelles et sonores</li>
-                        <li>Automatismes de dégivrage</li>
+                        <li>Installation plug-and-play</li>
+                        <li>Plafonnier ou mural</li>
+                        <li>Plage de température étendue</li>
+                        <li>Faible encombrement</li>
+                        <li>Maintenance simplifiée</li>
                     </ul>
-                    <a href="../contact/index.html" class="btn-primary">En savoir plus</a>
+                    <a href="refroidissement-monobloc.html" class="btn-primary">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Sécurité -->
+                <!-- Système Split -->
                 <div class="category-card">
                     <div class="category-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-columns"></i>
                     </div>
-                    <h3>Sécurité</h3>
-                    <p>Équipements de sécurité pour le confinement et l'accès.</p>
+                    <h3>Système Split</h3>
+                    <p>Unité séparée en deux parties pour une installation flexible et discrète.</p>
                     <ul class="category-list">
-                        <li>Poignées anti-panique</li>
-                        <li>Systèmes de déverrouillage intérieur</li>
-                        <li>Signaux lumineux d'alarme</li>
-                        <li>Detecteurs de présence</li>
-                        <li>Arrêts d'urgence</li>
+                        <li>Unité intérieure discrète</li>
+                        <li>Unité extérieure à distance</li>
+                        <li> liaison frigorifique jusqu'à 20m</li>
+                        <li>Faible niveau sonore</li>
+                        <li>Adapté aux espaces contraints</li>
                     </ul>
-                    <a href="../contact/index.html" class="btn-primary">En savoir plus</a>
+                    <a href="refroidissement-split.html" class="btn-primary">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Stockage -->
+                <!-- Unité de Congélation -->
                 <div class="category-card">
                     <div class="category-icon">
-                        <i class="fas fa-pallet"></i>
+                        <i class="fas fa-icicles"></i>
                     </div>
-                    <h3>Aménagement Intérieur</h3>
-                    <p>Solutions de stockage et organisation pour chambres froides.</p>
+                    <h3>Unité de Congélation</h3>
+                    <p>Systèmes spécialisés pour températures négatives jusqu'à -40°C.</p>
                     <ul class="category-list">
-                        <li>Rayonnages aluminium inoxydable</li>
-                        <li>Cloisons de séparation</li>
-                        <li>Caillebotis de sol</li>
-                        <li>Protection murale</li>
-                        <li>Équipements de manutention</li>
+                        <li>Compresseurs bi-étagés</li>
+                        <li>Evaporateurs à ailettes larges</li>
+                        <li>Dégivrage électrique ou gaz chaud</li>
+                        <li>Isolation renforcée</li>
+                        <li>Conforme normes surgelation</li>
                     </ul>
-                    <a href="../contact/index.html" class="btn-primary">En savoir plus</a>
+                    <a href="unite-congelation.html" class="btn-primary">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
 
-                <!-- Hygiène -->
+                <!-- Unités Chiller -->
                 <div class="category-card">
                     <div class="category-icon">
-                        <i class="fas fa-hand-sparkles"></i>
+                        <i class="fas fa-tint"></i>
                     </div>
-                    <h3>Hygiène & Nettoyage</h3>
-                    <p>Produits et équipements pour le nettoyage et la désinfection.</p>
+                    <h3>Unités Chiller</h3>
+                    <p>Refroidissement par eau glycolée pour applications spécifiques.</p>
                     <ul class="category-list">
-                        <li>Produits désinfectants alimentaires</li>
-                        <li>Équipements de nettoyage haute pression</li>
-                        <li>Tapis désinfectants</li>
-                        <li>Poubelles à pédale inox</li>
-                        <li>Distributeurs de savon</li>
+                        <li>Refroidissement précis ±0.5°C</li>
+                        <li>Circuits glycolés inox</li>
+                        <li>Pompes de circulation intégrées</li>
+                        <li>Échangeurs à plaques</li>
+                        <li>Idéal process industriel</li>
                     </ul>
-                    <a href="../contact/index.html" class="btn-primary">En savoir plus</a>
+                    <a href="unites-chiller.html" class="btn-primary">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 4rem 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);">
+        <div class="container" style="text-align: center; color: white;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Besoin d'aide pour choisir votre équipement ?</h2>
+            <p style="opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Nos experts vous accompagnent dans le dimensionnement et le choix de la solution la plus adaptée à vos besoins.
+            </p>
+            <a href="../contact/index.html" class="btn-primary" style="background: white; color: var(--primary);">
+                <i class="fas fa-phone"></i> Nous contacter
+            </a>
         </div>
     </section>
 
@@ -349,8 +612,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <img src="../../images/logo-cogepam.webp" alt="COGEPAM" width="50" height="50">
-                        
+                        <img src="../../images/logo-cogepam.webp" alt="COGEPAM" width="50" height="50" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:1.5rem;font-weight:800;color:white;\'>COGEPAM</span>';">
                     </div>
                     <p>Expert en solutions de réfrigération industrielle et commerciale. Filiale du Groupe Bayoudh Metals.</p>
                     <div class="footer-social">
