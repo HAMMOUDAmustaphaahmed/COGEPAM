@@ -280,10 +280,7 @@
     }
     </script>
     
-    <style>
-        /* Critical CSS Inline pour le Above-the-Fold */
-        .page-loader{position:fixed;inset:0;background:linear-gradient(135deg,#006b8f 0%,#0096c7 100%);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity .5s ease}.loader-container{text-align:center;color:#fff}.loader-mascot{position:relative;margin-bottom:2rem}.mascot-img{width:120px;height:auto;animation:bounce 2s infinite}.mascot-shadow{width:80px;height:20px;background:rgba(0,0,0,.2);border-radius:50%;margin:0 auto;animation:shadow 2s infinite}@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}@keyframes shadow{0%,100%{transform:scale(1)}50%{transform:scale(.8)}}.loader-brand{font-size:2rem;font-weight:800;display:block;margin-bottom:.5rem}.loader-dots{display:inline-flex;gap:.5rem}.loader-dots .dot{width:10px;height:10px;background:#ffd700;border-radius:50%;animation:dotPulse 1.4s infinite both}.loader-dots .dot:nth-child(1){animation-delay:-.32s}.loader-dots .dot:nth-child(2){animation-delay:-.16s}@keyframes dotPulse{0%,100%,80%{transform:scale(0)}40%{transform:scale(1)}}.loader-progress{width:200px;height:4px;background:rgba(255,255,255,.2);border-radius:2px;margin:1.5rem auto;overflow:hidden}.progress-bar{width:0;height:100%;background:#ffd700;animation:progress 2s ease-out forwards}@keyframes progress{to{width:100%}}.loader-tagline{font-size:1rem;opacity:.9}.loader-particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}.particle{position:absolute;color:rgba(255,255,255,.3);font-size:2rem;animation:fall linear infinite}@keyframes fall{to{transform:translateY(100vh) rotate(360deg)}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    </style>
+    
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
     
@@ -292,37 +289,37 @@
         Aller au contenu principal
     </a>
 
-    <!-- Loader -->
-    <div id="pageLoader" class="page-loader" role="status" aria-live="polite" aria-label="Chargement de la page">
-        <div class="loader-container">
-            <div class="loader-mascot">
-                <img src="images/mascot-cogepam.png" alt="COGEPAM - Chargement" class="mascot-img" width="120" height="120">
-                <div class="mascot-shadow"></div>
-            </div>
-            <div class="loader-text">
-                <span class="loader-brand">COGEPAM</span>
-                <span class="loader-dots" aria-hidden="true">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </span>
-            </div>
-            <div class="loader-progress" aria-hidden="true">
-                <div class="progress-bar"></div>
-            </div>
-            <p class="loader-tagline">Votre expert en froid industriel</p>
+     <!-- Loader -->
+<div id="pageLoader" class="page-loader">
+    <div class="loader-container">
+        <div class="loader-mascot">
+            <img src="images/mascot-cogepam.png" alt="COGEPAM Loader" class="mascot-img">
+            <div class="mascot-shadow"></div>
         </div>
-        <div class="loader-particles" aria-hidden="true">
-            <span class="particle snowflake" style="--i:1;left:10%;animation-duration:8s">❄</span>
-            <span class="particle snowflake" style="--i:2;left:20%;animation-duration:10s;animation-delay:1s">❅</span>
-            <span class="particle snowflake" style="--i:3;left:30%;animation-duration:9s;animation-delay:2s">❆</span>
-            <span class="particle snowflake" style="--i:4;left:50%;animation-duration:11s;animation-delay:0s">❄</span>
-            <span class="particle snowflake" style="--i:5;left:70%;animation-duration:8s;animation-delay:3s">❅</span>
-            <span class="particle snowflake" style="--i:6;left:80%;animation-duration:10s;animation-delay:1s">❆</span>
-            <span class="particle snowflake" style="--i:7;left:90%;animation-duration:9s;animation-delay:2s">❄</span>
-            <span class="particle snowflake" style="--i:8;left:95%;animation-duration:11s;animation-delay:4s">❅</span>
+        <div class="loader-text">
+            <span class="loader-brand">COGEPAM</span>
+            <span class="loader-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </span>
         </div>
+        <div class="loader-progress">
+            <div class="progress-bar"></div>
+        </div>
+        <p class="loader-tagline">Votre expert en froid industriel</p>
     </div>
+    <div class="loader-particles">
+        <span class="particle snowflake" style="--i:1;">❄</span>
+        <span class="particle snowflake" style="--i:2;">❅</span>
+        <span class="particle snowflake" style="--i:3;">❆</span>
+        <span class="particle snowflake" style="--i:4;">❄</span>
+        <span class="particle snowflake" style="--i:5;">❅</span>
+        <span class="particle snowflake" style="--i:6;">❆</span>
+        <span class="particle snowflake" style="--i:7;">❄</span>
+        <span class="particle snowflake" style="--i:8;">❅</span>
+    </div>
+</div>
 
     <!-- Header & Navigation -->
     <header class="site-header">
@@ -459,9 +456,9 @@
                                         <span class="item-title">Soupape de Surpression</span>
                                         <span class="item-desc">Sécurité différence de pression</span>
                                     </a>
-                                    <a href="pages/accessoires/control-panel.html" class="submenu-item" role="menuitem">
-                                        <span class="item-title">Control Panel</span>
-                                        <span class="item-desc">Régulation électronique</span>
+                                    <a href="../../pages/accessoires/control-panel.html" class="submenu-item">
+                                        <span class="item-title">Accessoires de Portes</span>
+                                        <span class="item-desc">Charnières, gonds, butoirs</span>
                                     </a>
                                     <a href="pages/accessoires/light.html" class="submenu-item" role="menuitem">
                                         <span class="item-title">Light</span>
@@ -881,7 +878,11 @@
         <!-- Stats Section avec Counter Animation -->
         <section class="stats-section" aria-label="Nos chiffres clés">
             <div class="container">
-                <div class="stats-grid">
+                <header class="section-header">
+                    <span class="section-badge">Nos Solutions</span>
+                    <h2 id="products-heading" class="section-title">Produits & Services de Réfrigération</h2>
+                    <p class="section-subtitle">Des solutions complètes pour tous vos besoins en froid industriel et commercial</p>
+                </header>                <div class="stats-grid">
                     <div class="stat-box" itemscope itemtype="https://schema.org/QuantitativeValue">
                         <div class="stat-icon" aria-hidden="true">
                             <i class="fas fa-building"></i>
@@ -1202,6 +1203,11 @@
                         </figure>
                     </div>
                 </div>
+                <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Votre partenaire en Tunisie</h2>
+                </header>
+            </div>
             </div>
         </section>
 
